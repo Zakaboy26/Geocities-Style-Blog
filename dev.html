@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zakazoenoe – Dev Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://cdn3.emoji.gg/emojis/6718-salsadance.gif">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-gradient"></div>
+  <div class="star-noise"></div>
+  <div class="float-orb orb-1"></div>
+  <div class="float-orb orb-2"></div>
+
+  <div class="shell">
+
+    <!-- top section with the gifs + logo -->
+    <header class="top-bar">
+      <img
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGw0aTNpNm02NnBwcjczMncxeGR4YWJ4b3drd3p6ZjVjaWpicGJlYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5GhrWdGGUITWjISdIP/giphy.gif"
+        class="header-gif left-gif">
+
+      <img src="6916422c8447f-removebg-preview.png" alt="Zakazoenoe logo" class="site-logo">
+
+      <img
+        src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNydjJlcjBmYWV1ajdqeTJ2a2N2azhwNHAzZGszeHJzOW5zMXhyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gJ6x0NpSI7ppqsS6F2/giphy.gif"
+        class="header-gif right-gif">
+    </header>
+
+    <div class="grid" style="grid-template-columns: 220px minmax(0,1fr);">
+      <nav class="command-menu">
+        <div class="command-header">sections</div>
+        <button class="command-item active" data-target="dev-overview">overview</button>
+        <button class="command-item" data-target="dev-projects">projects</button>
+        <button class="command-item" data-target="dev-contact">contact</button>
+        <button class="command-item" onclick="window.location.href='index.html'">back to main</button>
+      </nav>
+
+      <main class="main-column">
+        <section id="dev-overview" class="panel panel-main">
+          <div class="panel-inner">
+            <h1 class="panel-title">Overview</h1>
+            <p>Lorem Ipsum is simply dummy text...</p>
+            <p>Lorem Ipsum is simply dummy text...</p>
+          </div>
+        </section>
+
+        <section id="dev-projects" class="panel panel-main" style="display:none;">
+          <div class="panel-inner">
+            <h1 class="panel-title">Projects</h1>
+
+            <ul>
+              <li><b>project 1:</b> ... <a href="https://github.com/Zakaboy26/BT-Automated-Router-Config-System" target="_blank">github</a></li>
+              <li><b>project 2:</b> ... <a href="https://github.com/Zakaboy26/BipSync-Springboot-Client-Project" target="_blank">github</a></li>
+              <li><b>project 3:</b> ... <a href="https://github.com/Zakaboy26/100DaysofCode" target="_blank">github</a></li>
+              <li><b>project 4:</b> ... <a href="https://github.com/Zakaboy26/EchoesofElmwood" target="_blank">github</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="dev-contact" class="panel panel-main" style="display:none;">
+          <div class="panel-inner">
+            <h1 class="panel-title">contact</h1>
+            <p>Lorem Ipsum is simply dummy text...</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bottom-bar">
+      <div class="footer-text">yeah this site is my save point</div>
+    </footer>
+  </div>
+
+  <!-- background music (hidden iframe so yt can autoplay) -->
+  <iframe id="dev-music" style="display:none;" allow="autoplay"></iframe>
+
+  <!-- script that handles the music + the tab switching -->
+  <script>
+    const hollowURL =
+      "https://www.youtube.com/embed/niQWT4i7XkU?enablejsapi=1&controls=0&loop=1&playlist=niQWT4i7XkU";
+
+    const musicFrame = document.getElementById("dev-music");
+    musicFrame.src = hollowURL + "&autoplay=1&mute=0";
+
+    let devPlayer;
+
+    // load the YouTube player API
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+
+    function onYouTubeIframeAPIReady() {
+      devPlayer = new YT.Player("dev-music");
+    }
+
+    // small mute/unmute toggle button in the corner
+    const muteBtn = document.createElement("button");
+    muteBtn.textContent = "🔊";
+    muteBtn.style.cssText =
+      "position:fixed;bottom:20px;right:20px;z-index:999;padding:6px 12px;border-radius:6px;background:#111;font-size:18px;";
+    document.body.appendChild(muteBtn);
+
+    let isMuted = false;
+
+    muteBtn.addEventListener("click", () => {
+      if (!devPlayer) return;
+
+      if (isMuted) {
+        devPlayer.unMute();
+        muteBtn.textContent = "🔊";
+      } else {
+        devPlayer.mute();
+        muteBtn.textContent = "🔇";
+      }
+      isMuted = !isMuted;
+    });
+
+    // switching between the overview / projects / contact sections
+    const devButtons = document.querySelectorAll(".command-item[data-target]");
+    const devSections = document.querySelectorAll(".panel");
+
+    devButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.target;
+
+        devButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        devSections.forEach(sec => {
+          sec.style.display = sec.id === target ? "block" : "none";
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

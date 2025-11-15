@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zakazoenoe – Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- little dancing icon for the browser tab -->
+  <link rel="icon" type="image/x-icon" href="https://cdn3.emoji.gg/emojis/6718-salsadance.gif">
+
+  <!-- site font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- main styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- background stuff behind everything -->
+  <div class="sky-gradient"></div>
+  <div class="star-noise"></div>
+  <div class="float-orb orb-1"></div>
+  <div class="float-orb orb-2"></div>
+
+  <div class="shell">
+
+    <!-- page header with gifs + logo -->
+    <header class="top-bar">
+      <img
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGw0aTNpNm02NnBwcjczMncxeGR4YWJ4b3drd3p6ZjVjaWpicGJlYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5GhrWdGGUITWjISdIP/giphy.gif"
+        class="header-gif left-gif">
+
+      <img src="6916422c8447f-removebg-preview.png" alt="Zakazoenoe logo" class="site-logo">
+
+      <img
+        src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNydjJlcjBmYWV1ajdqeTJ2a2N2azhwNHAzZGszeHJzOW5zMXhyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gJ6x0NpSI7ppqsS6F2/giphy.gif"
+        class="header-gif right-gif">
+    </header>
+
+
+    <!-- main content for this page -->
+    <main class="main-column single-main">
+      <section class="panel panel-main">
+        <div class="panel-inner">
+
+          <h1 class="panel-title">photography</h1>
+
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+
+          <!-- photo grid -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:14px;">
+            <img src="https://picsum.photos/400/250?random=1" class="popup-img" alt="">
+            <img src="https://picsum.photos/400/250?random=2" class="popup-img" alt="">
+            <img src="https://picsum.photos/400/250?random=3" class="popup-img" alt="">
+            <img src="https://picsum.photos/400/250?random=4" class="popup-img" alt="">
+          </div>
+
+          <!-- small description under the gallery -->
+          <p style="font-size:11px;opacity:0.8;margin-top:12px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <!-- back link -->
+          <p style="margin-top:12px;">
+            <a href="index.html">← back to main</a>
+          </p>
+
+        </div>
+      </section>
+    </main>
+
+
+    <!-- footer at the bottom -->
+    <footer class="bottom-bar">
+      <div class="footer-text">yeah this site is my save point</div>
+    </footer>
+
+  </div>
+
+  <!-- YouTube audio hidden off-screen -->
+  <div id="photo-music"></div>
+
+  <script>
+    // track that plays on the photography page
+    const traverseURL =
+      "https://www.youtube.com/embed/QQ8y81D_IGY?enablejsapi=1&start=0&controls=0&loop=1&playlist=QQ8y81D_IGY";
+
+    // create hidden iframe for music
+    const iframe = document.createElement("iframe");
+    iframe.src = traverseURL + "&autoplay=1&mute=0";
+    iframe.style.display = "none";
+    iframe.allow = "autoplay";
+    iframe.id = "photo-yt";
+    document.body.appendChild(iframe);
+
+    // YouTube API player reference
+    let photoPlayer;
+    function onYouTubeIframeAPIReady() {
+      photoPlayer = new YT.Player("photo-yt", {});
+    }
+
+    // load YT iframe API
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+
+    // little mute/unmute button in the bottom corner
+    const muteBtn = document.createElement("button");
+    muteBtn.textContent = "🔇";
+    muteBtn.style.cssText =
+      "position:fixed;bottom:20px;right:20px;z-index:999;background:#111;padding:6px 12px;border-radius:6px;";
+    document.body.appendChild(muteBtn);
+
+    let isMuted = false;
+    muteBtn.textContent = "🔊"; // start unmuted
+
+    muteBtn.addEventListener("click", () => {
+      if (!photoPlayer) return;
+
+      if (isMuted) {
+        photoPlayer.unMute();
+        muteBtn.textContent = "🔊";
+      } else {
+        photoPlayer.mute();
+        muteBtn.textContent = "🔇";
+      }
+
+      isMuted = !isMuted;
+    });
+  </script>
+
+</body>
+</html>

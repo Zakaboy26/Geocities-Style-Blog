@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zakazoenoe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- little dancing icon for the tab -->
+  <link rel="icon" type="image/x-icon" href="https://cdn3.emoji.gg/emojis/6718-salsadance.gif">
+
+  <!-- font I’m using across the site -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- main CSS and JS -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- background layers stacked behind everything -->
+  <div class="sky-gradient"></div>
+  <div class="star-noise"></div>
+  <div class="float-orb orb-1"></div>
+  <div class="float-orb orb-2"></div>
+
+  <div class="shell">
+
+    <!-- top header bar with the two gifs + logo -->
+    <header class="top-bar">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGw0aTNpNm02NnBwcjczMncxeGR4YWJ4b3drd3p6ZjVjaWpicGJlYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5GhrWdGGUITWjISdIP/giphy.gif"
+           class="header-gif left-gif">
+
+      <img src="6916422c8447f-removebg-preview.png" class="site-logo">
+
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNydjJlcjBmYWV1ajdqeTJ2a2N2azhwNHAzZGszeHJzOW5zMXhyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gJ6x0NpSI7ppqsS6F2/giphy.gif"
+           class="header-gif right-gif">
+    </header>
+
+
+
+    <!-- main 3-column layout for the whole page -->
+    <div class="grid">
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="side-column left-column">
+
+        <!-- navigation menu on the left -->
+        <nav class="command-menu">
+          <div class="command-header">Command</div>
+
+          <button class="command-item active" data-target="home">Home</button>
+          <button class="command-item" data-popup="soraWindow">El Gato</button>
+          <button class="command-item" data-popup="bodyWindow">Gym Progress</button>
+          <button class="command-item" data-popup="handheldWindow">Handhelds</button>
+          <button class="command-item" data-target="blog">Blog</button>
+          <button class="command-item" onclick="window.location.href='dev.html'">Dev Portfolio</button>
+          <button class="command-item" onclick="window.location.href='photography.html'">Photography</button>
+        </nav>
+
+        <!-- small updates log -->
+        <section class="hud-window">
+          <div class="hud-bar">updates</div>
+          <div class="hud-inner updates-inner">
+            <p><b>2025-11-14</b> · [mobile view] header + dev portfolio fix, cba to do the rest of the site :p</p>
+            <p><b>2025-11-14</b> · mogumi brev</p>
+            <p><b>2025-11-14</b> · spotify playlist embed</p>
+            <p><b>2025-11-13</b> · added custom blinkies + fixed music autoplay</p>
+            <p><b>2025-11-12</b> · dev portfolio section added</p>
+            <p><b>2025-11-11</b> · music player + song list</p>
+            <p><b>2025-11-10</b> · added updates section...</p>
+          </div>
+        </section>
+
+        <!-- virtual pet widget -->
+        <section class="hud-window" style="grid-column: span 2;">
+          <div class="hud-bar">Mogumi</div>
+          <div class="hud-inner gifypet-inner">
+            <iframe
+              src="https://gifypet.neocities.org/pet/pet.html?name=Mogumi&dob=1763064978&gender=f&element=Water&pet=http%3A%2F%2Ffc02.deviantart.net%2Ffs71%2Ff%2F2010%2F223%2Fa%2Fc%2FFree_Twitchy_Heartless_Avatar_by_a_k_u.gif&map=https%3A%2F%2Fgifypet.neocities.org%2Fimages%2Fanlucas-bg.gif&background=https%3A%2F%2Fpreview.redd.it%2Fa-set-of-atmospheric-kh-gifs-by-gummi-ships-v0-rfwfudaknd3f1.gif%3Fwidth%3D540%26auto%3Dwebp%26s%3D12c44f2e52f51f7e71bb604089405d20ae220455&tablecolor=black&textcolor=black"
+              width="120%"
+              height="430"
+              frameborder="0"
+              scrolling="no">
+            </iframe>
+          </div>
+        </section>
+      </aside>
+
+
+
+      <!-- CENTER CONTENT AREA -->
+      <main class="main-column">
+
+        <!-- default Home panel -->
+        <section id="home" class="panel panel-main">
+          <div class="panel-inner">
+            <h1 class="panel-title">Welcome</h1>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text...
+            </p>
+
+            <hr class="divider">
+
+            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
+            <p>Lorem Ipsum text again...</p>
+
+            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
+            <p>Lorem Ipsum text again...</p>
+
+            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
+            <p>Lorem Ipsum text again...</p>
+          </div>
+        </section>
+
+        <!-- Roxas meteor gif lol -->
+        <div class="roxas-meteor" style="margin-top:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(137,244,255,0.7);background:#02030b;box-shadow:0 0 20px rgba(0,0,0,0.9);">
+          <img
+            src="https://c.tenor.com/PdpsVzQ6k9EAAAAC/tenor.gif"
+            alt="Roxas nosedive"
+            style="display:block;width:100%;height:auto;">
+        </div>
+
+        <!-- blog panel (hidden unless selected) -->
+        <section id="blog" class="panel">
+          <div class="panel-inner">
+            <h1 class="panel-title">Blog</h1>
+            <p>
+              Lorem Ipsum text...
+            </p>
+          </div>
+        </section>
+      </main>
+
+
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="side-column right-column">
+
+        <!-- embedded chat box -->
+        <section class="hud-window">
+          <div class="hud-bar">Comments</div>
+          <div class="hud-inner">
+            <iframe
+              src="https://www5.cbox.ws/box/?boxid=959621&boxtag=r5PsaI"
+              width="100%"
+              height="450"
+              allowtransparency="yes"
+              allow="autoplay"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              scrolling="auto">
+            </iframe>
+          </div>
+        </section>
+
+        <!-- music player UI -->
+        <section class="hud-window">
+          <div class="hud-bar">music</div>
+          <div class="hud-inner music-inner">
+            <marquee id="track-title" scrollamount="3">loading track...</marquee>
+
+            <div class="music-controls">
+              <button id="btn-prev" class="music-btn">↞</button>
+              <button id="btn-play" class="music-btn">▶</button>
+              <button id="btn-next" class="music-btn">↠</button>
+              <button id="btn-mute" class="music-btn">🔇</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- spotify playlist embed -->
+        <section class="hud-window">
+          <div class="hud-bar">spotify playlist</div>
+          <div class="hud-inner">
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/0T6GHghGvndX1KGJDYGqIY?utm_source=generator&theme=0"
+              width="100%"
+              height="400"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </section>  
+      </aside>
+    </div>
+
+
+
+  <!-- scrolling row of blinkies under everything -->
+  <marquee scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();">
+    <div class="blinkies-scroll">
+
+      <!-- blinkies duplicated so the loop scrolls longer :p-->
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+      
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+      
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+      
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+      
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+      
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+    </div>
+  </marquee>
+
+
+
+  <!-- POPUP WINDOWS (all hidden by default until triggered) -->
+
+  <!-- popup for the cat section -->
+  <div id="soraWindow" class="popup" style="display:none;">
+    <div class="popup-bar">
+      <span>El Gato</span>
+      <button class="popup-close" data-close="soraWindow">✕</button>
+    </div>
+    <div class="popup-body">
+      <p>Lorem Ipsum text...</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
+        alt="sora cat"
+        class="popup-img">
+      <p>Lorem Ipsum text...</p>
+    </div>
+  </div>
+
+  <!-- popup for gym progress -->
+  <div id="bodyWindow" class="popup popup-offset-right" style="display:none;">
+    <div class="popup-bar">
+      <span>Gym Progress</span>
+      <button class="popup-close" data-close="bodyWindow">✕</button>
+    </div>
+    <div class="popup-body popup-scroll">
+      <p>Lorem Ipsum text...</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
+        alt="gym"
+        class="popup-img">
+      <p>Lorem Ipsum text...</p>
+      <p>Lorem Ipsum text...</p>
+    </div>
+  </div>
+
+  <!-- popup for handheld game collection -->
+  <div id="handheldWindow" class="popup popup-offset-left" style="display:none;">
+    <div class="popup-bar">
+      <span>Handheld Collection</span>
+      <button class="popup-close" data-close="handheldWindow">✕</button>
+    </div>
+    <div class="popup-body popup-scroll">
+      <p>Lorem Ipsum text...</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
+        alt="gym"
+        class="popup-img">
+      <p>Lorem Ipsum text...</p>
+      <p>Lorem Ipsum text...</p>
+    </div>
+  </div>
+
+</body>
+</html>
