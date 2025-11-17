@@ -244,6 +244,33 @@ body {
   margin: 14px 0 10px;
 }
 
+/* blog entries scroll container */
+.blog-entries {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* custom scrollbar styling */
+.blog-entries::-webkit-scrollbar {
+  width: 8px;
+}
+
+.blog-entries::-webkit-scrollbar-track {
+  background: rgba(5, 10, 26, 0.5);
+  border-radius: 10px;
+}
+
+.blog-entries::-webkit-scrollbar-thumb {
+  background: rgba(137, 244, 255, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(137, 244, 255, 0.3);
+}
+
+.blog-entries::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 244, 255, 0.7);
+}
+
 /* small window-style UI blocks used throughout */
 
 .hud-window {
@@ -339,6 +366,7 @@ body {
   margin-right: 4px;
   image-rendering: pixelated;
 }
+
 
 .footer-text {
   opacity: 0.9;
@@ -460,6 +488,38 @@ body {
   margin-right: 8px;
 }
 
+/* Popup gallery layout */
+.popup-gallery {
+  display: flex;              
+  flex-direction: column;
+  gap: 16px;                  
+}
+
+.popup-gallery figure {
+  display: flex;
+  flex-direction: column;     
+  align-items: center;
+  margin: 0;
+}
+
+/* Thumbnail images, had to force crop them D: */
+.popup-gallery img {
+  width: 120px;               
+  height: 150px;
+  object-fit: cover;          
+  border-radius: 8px;
+  border: 1px solid rgba(137, 244, 255, 0.4);
+}
+
+/* Caption text under each image */
+.popup-gallery figcaption {
+  margin-top: 6px;
+  font-size: 11px;
+  text-align: center;
+  opacity: 0.75;
+}
+
+
 /* mobile adjustments for the header area */
 @media (max-width: 600px) {
 
@@ -508,5 +568,6 @@ body {
     line-height: 1.5;
   }
 }
-
 }
+
+
