@@ -5,8 +5,8 @@
   <title>Zakazoenoe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- little dancing icon for the tab -->
-  <link rel="icon" type="image/x-icon" href="https://cdn3.emoji.gg/emojis/6718-salsadance.gif">
+  <!-- Cloud favicon -->
+  <link rel="icon" type="image/gif" href="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNydjJlcjBmYWV1ajdqeTJ2a2N2azhwNHAzZGszeHJzOW5zMXhyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gJ6x0NpSI7ppqsS6F2/giphy.gif">
 
   <!-- font I’m using across the site -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
@@ -61,7 +61,8 @@
         <section class="hud-window">
           <div class="hud-bar">updates</div>
           <div class="hud-inner updates-inner">
-            <p><b>2025-11-14</b> · [mobile view] header + dev portfolio fix, cba to do the rest of the site :p</p>
+            <p><b>2025-11-17</b> · better/updated blog section with scroll wheel</p>
+            <p><b>2025-11-14</b> · [mobile view] header + dev portfolio fix, cba to do the rest of the site</p>
             <p><b>2025-11-14</b> · mogumi brev</p>
             <p><b>2025-11-14</b> · spotify playlist embed</p>
             <p><b>2025-11-13</b> · added custom blinkies + fixed music autoplay</p>
@@ -94,25 +95,32 @@
         <!-- default Home panel -->
         <section id="home" class="panel panel-main">
           <div class="panel-inner">
-            <h1 class="panel-title">Welcome</h1>
+            <h1 class="panel-title">Hello.</h1>
 
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              Welcome to my personal site [WIP].
+              This is where I keep my coding projects, photography, music and whatever I’m experimenting with creatively. I wanted a space that feels more like a personal desktop than a traditional portfolio, so click around and explore.
+              If you want to check out my weekly(?) thoughts, head to the Blog.
+              
+              I built this space as a personal archive, somewhere to keep track of my projects, interests and ongoing work without relying on social platforms. The goal was to create a site that feels organised but still individual, with room for experimentation.
             </p>
             <p>
-              Lorem Ipsum is simply dummy text...
+              I trade custom blinkies that link to other people’s sites. If you want to trade just hit me up on Discord: 
+              <a href="https://discord.com/users/959802730505965628" target="_blank">@Zakazoenoe</a>.
             </p>
+
 
             <hr class="divider">
 
-            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
-            <p>Lorem Ipsum text again...</p>
+            <h2 class="section-title">Overview:</h2>
+            <p>Most of what’s on here comes from projects I’ve already finished or documented on GitHub. I like breaking things down in a simple way so they’re easy to look back on without digging through repo notes. The sections cover the main stuff I’ve worked on, why I built it and anything I found interesting while putting it together while I keep this site as my archive.</p>
 
-            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
-            <p>Lorem Ipsum text again...</p>
+            <h2 class="section-title">Freelancing:</h2>
+            <p>My freelancing work has given me the most practical experience as a developer. I’ve worked with clients across different areas, from esports platforms with large user bases to smaller businesses needing clean, reliable web apps.<br><br>
+            Most of the work involves building full-stack features, integrating APIs and making sure the technical decisions actually match what the client needs. It taught me how to communicate clearly, manage expectations and deliver results without needing someone to supervise every step. The projects vary, but the approach stays consistent: understand the problem, build a solution that holds up and keep everything organised so the client can rely on it long-term.</p>
 
-            <h2 class="section-title">Lorem Ipsum: Lorem Ipsum</h2>
-            <p>Lorem Ipsum text again...</p>
+            <h2 class="section-title">Outside of programming:</h2>
+            <p> <p> Outside of coding, I spend time in the gym, working on/listening to music, taking photos, playing games and doing other things that keep me balanced. These don’t directly connect to my projects, but they do influence how I think and work. They keep everything from feeling one-dimensional, and I like having a mix of technical and non-technical hobbies. </p>
           </div>
         </section>
 
@@ -125,12 +133,30 @@
         </div>
 
         <!-- blog panel (hidden unless selected) -->
-        <section id="blog" class="panel">
+        <section id="blog" class="panel panel-main">
           <div class="panel-inner">
             <h1 class="panel-title">Blog</h1>
-            <p>
-              Lorem Ipsum text...
+            <div class="blog-entries">
+              <p>
+              <b>Week of Sunday · 23/11/2025</b><br>
+              ------------------------------------------------------------<br>
+            
+              <b>What I Did:</b><br>
+              - ...<br>
+              - ...<br>
+              - ...<br>
+              <br>
+
+              <b>Week of Sunday · 16/11/2025</b><br>
+              ------------------------------------------------------------<br>
+            
+              <b>What I Did:</b><br>
+              - Mostly recovered from my bicep injury so started going gym properly after a long time<br>
+              - Been keeping up my 100 Days of Code challenge<br>
+              - Waiting on my AYN Thor...<br>
+              <br>
             </p>
+            </div>
           </div>
         </section>
       </main>
@@ -192,66 +218,76 @@
         </section>  
       </aside>
     </div>
-
-
-
-  <!-- scrolling row of blinkies under everything -->
-  <marquee scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();">
-    <div class="blinkies-scroll">
-
-      <!-- blinkies duplicated so the loop scrolls longer :p-->
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-      
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-      
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-      
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-      
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-      
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
-    </div>
-  </marquee>
-
-
-
+    
+    <!-- scrolling row of blinkies under everything -->
+    <marquee scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();">
+      <div class="blinkies-scroll">
+        
+        <!-- contact me to trade blinkies that link to your site -->
+          <a href="https://zakazoenoe.neocities.org/" target="_blank">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2MycjV2cjRsbG1rbjA4djBqaHZ6N240aXN6OG5lZzNlcW1yMzd0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uVJuKlPxQ7IsMyQACf/giphy.gif" class="blinkie"> 
+          </a>
+  
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3owNHh3YjgwNndweWM1YmlzNTV5b3Y0bDJwOXk2NjBxdHFmcW9pNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CzEBHNTlfhwCwvLJ7j/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHgwc2tyNzR3NGYzb2lmZnZ6NDBtaXBpdmkyaHc4anhxbWIyaHZidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jphw636ca4DmlTaPcL/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN0c3lod3VrZnNzY3cwbDNib20yZGR2OGlsYXhtMTI1NnJjZXVrOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqOov02t2SlOv9hWzq/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+        
+        <!-- duplicated so it be loopin -->
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3owNHh3YjgwNndweWM1YmlzNTV5b3Y0bDJwOXk2NjBxdHFmcW9pNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CzEBHNTlfhwCwvLJ7j/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHgwc2tyNzR3NGYzb2lmZnZ6NDBtaXBpdmkyaHc4anhxbWIyaHZidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jphw636ca4DmlTaPcL/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN0c3lod3VrZnNzY3cwbDNib20yZGR2OGlsYXhtMTI1NnJjZXVrOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqOov02t2SlOv9hWzq/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+        
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3owNHh3YjgwNndweWM1YmlzNTV5b3Y0bDJwOXk2NjBxdHFmcW9pNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CzEBHNTlfhwCwvLJ7j/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHgwc2tyNzR3NGYzb2lmZnZ6NDBtaXBpdmkyaHc4anhxbWIyaHZidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jphw636ca4DmlTaPcL/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN0c3lod3VrZnNzY3cwbDNib20yZGR2OGlsYXhtMTI1NnJjZXVrOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqOov02t2SlOv9hWzq/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+        
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3owNHh3YjgwNndweWM1YmlzNTV5b3Y0bDJwOXk2NjBxdHFmcW9pNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CzEBHNTlfhwCwvLJ7j/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHgwc2tyNzR3NGYzb2lmZnZ6NDBtaXBpdmkyaHc4anhxbWIyaHZidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jphw636ca4DmlTaPcL/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN0c3lod3VrZnNzY3cwbDNib20yZGR2OGlsYXhtMTI1NnJjZXVrOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqOov02t2SlOv9hWzq/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+        
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3owNHh3YjgwNndweWM1YmlzNTV5b3Y0bDJwOXk2NjBxdHFmcW9pNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CzEBHNTlfhwCwvLJ7j/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHgwc2tyNzR3NGYzb2lmZnZ6NDBtaXBpdmkyaHc4anhxbWIyaHZidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jphw636ca4DmlTaPcL/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN0c3lod3VrZnNzY3cwbDNib20yZGR2OGlsYXhtMTI1NnJjZXVrOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqOov02t2SlOv9hWzq/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHF6NDR6cTBpdmFqb3lrbHJyZW01N3Joc2s5dXAyZXlsNDE3OG52MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W206NXq3nhaj5KAmOW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFsNDN4b3ByOHh0M3FtaG9lOGF2cnZxNmpueHpuanBodnh5cTNmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3lkspvZQu2bo26ncmW/giphy.gif" class="blinkie">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRicXhwN2d2dzY5ZXBhOXFtdjNrcWN5dTJ3czRzdDN4czRqdzQ1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N6hKGlgI7TaNoJGxLI/giphy.gif" class="blinkie">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDRya3ExcXFiYzh2M2FpdW9ic3J4MnR1N3g0cnlpaDZtNG50bTdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09lH15UsSUVpbepEOW/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnB0YzB5Y3c3dzd3Nm10cnlnZXJscDA3YTBhZDZlYWhkcjhzeGhocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wn4TZjLGf3VkWq7BHk/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RieW5vdm9semF1a2htMzUzcHY0YzJmNWVsanZrcTB1cWV2YXJ4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fDPykrwXLxeQsck5Cv/giphy.gif" class="blinkie">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzcjltcmV0N2ZtdjcwMGt0ZG9mcjg5bGc1YXFyZmwwOW92dXdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RD3tsifYYGgJejFIDr/giphy.gif" class="blinkie">
+        
+      </div>
+    </marquee>
+    
+    
   <!-- POPUP WINDOWS (all hidden by default until triggered) -->
 
   <!-- popup for the cat section -->
@@ -260,49 +296,262 @@
       <span>El Gato</span>
       <button class="popup-close" data-close="soraWindow">✕</button>
     </div>
-    <div class="popup-body">
-      <p>Lorem Ipsum text...</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
-        alt="sora cat"
-        class="popup-img">
-      <p>Lorem Ipsum text...</p>
+  
+    <div class="popup-body popup-scroll">
+      <h2>Sora</h2>
+      <div class="sora-stats">
+        <p><strong>Pattern:</strong> Tortoiseshell</p>
+        <p><strong>Age:</strong> 1 year old</p>
+        <p><strong>Confirmed Kills:</strong> 3 </p>
+      </div>
+  
+      <hr class="divider">
+  
+      <h2>Gallery</h2>
+  
+      <!-- Sora photos -->
+      <div class="popup-gallery">
+  
+        <figure>
+          <img src="Gallery/El Gato/car.PNG" alt="Sora pfp">
+          <figcaption>Built in cravat.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/blanky.PNG" alt="Sora under blanket">
+          <figcaption>Blanket swallowed her.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/anger.jpg" alt="Sora angry">
+          <figcaption>Anger.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/heating pad.jpg" alt="Sora on laptop">
+          <figcaption>Keyboard or heatpad.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/jail.jpg" alt="Sora in cone">
+          <figcaption>Day 1 in jail. Planning her escape.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/kh.jpg" alt="Sora and Azula">
+          <figcaption>Her name is Sora for a reason.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/pc specialist.jpg" alt="Sora looking into PC case">
+          <figcaption>Diagnosing PC issues (she is the issue).</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/Preggo.jpg" alt="Sora with kittens">
+          <figcaption>Flexing baby collection.</figcaption>
+        </figure>
+  
+        <figure>
+          <img src="Gallery/El Gato/this big.jpg" alt="Sora with paw up">
+          <figcaption>She swears she caught a fish “this big.”</figcaption>
+        </figure>
+  
+      </div>
     </div>
   </div>
 
-  <!-- popup for gym progress -->
+
+
+    <!-- popup for gym progress -->
   <div id="bodyWindow" class="popup popup-offset-right" style="display:none;">
     <div class="popup-bar">
       <span>Gym Progress</span>
       <button class="popup-close" data-close="bodyWindow">✕</button>
     </div>
+  
     <div class="popup-body popup-scroll">
-      <p>Lorem Ipsum text...</p>
+  
+      <!-- Physique photo lmao -->
+      <h2>My Current Physique:</h2>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
         alt="gym"
         class="popup-img">
-      <p>Lorem Ipsum text...</p>
-      <p>Lorem Ipsum text...</p>
+      <p style="opacity:0.75; font-size:11px; margin-top:4px;">
+        Some of the back/bis stats are old as I'm recovering from a bicep injury....
+      </p>
+  
+      <hr class="divider">
+  
+      <!-- Stats -->
+      <h2>Stats</h2>
+      <div class="zaka-stats">
+        <p><strong>Training Goals:</strong> Strength + explosive calisthenics movts</p>
+        <p><strong>Bodyweight:</strong> 88Kg</p>
+      </div>
+  
+      <hr class="divider">
+  
+      <h2>Weekly Routine</h2>
+  
+      <!-- CHEST -->
+      <h3 class="section-title">Chest — Monday</h3>
+      <p><strong>Morning run</strong></p>
+      <p><strong>Dumbbell Incline Press (each side)</strong></p>
+      <ul>
+        <li>Warm-up: 18s → 28s</li>
+        <li>44Kgs — 4 reps</li>
+        <li>40Kgs — 6 reps</li>
+        <li>36Kgs — 8 reps</li>
+        <li>28Kgs — 12 reps</li>
+      </ul>
+      <p><strong>Smith Machine High Incline:</strong> 30&nbsp;kg each side × 2 sets</p>
+      <p><strong>Chest Fly Machine:</strong> 100 → 73 → 63 kg (or cables)</p>
+      <p><strong>Cable Press Finisher</strong></p>
+      <p><strong>Push-ups</strong> (TF)</p>
+  
+      <hr class="divider">
+  
+      <!-- BACK -->
+      <h3 class="section-title">Back — Tuesday</h3>
+      <p><strong>Morning run</strong></p>
+      <p><strong>Pull-ups:</strong> (TF)</p>
+      <p><strong>Barbell Rows</strong></p>
+      <ul>
+        <li>60&nbsp;kg — 5 reps (warm-up)</li>
+        <li>80&nbsp;kg — 5 reps</li>
+        <li>70&nbsp;kg — 7 reps</li>
+      </ul>
+      <p><strong>Lat Pulldowns</strong></p>
+      <ul>
+        <li>107&nbsp;kg — 7 reps</li>
+        <li>80&nbsp;kg — 10 reps</li>
+        <li>60&nbsp;kg — 12 reps</li>
+      </ul>
+      <p><strong>Cable Pullovers:</strong> 2 light sets</p>
+      <p><strong>Bicep Curls:</strong> 2 light sets</p>
+  
+      <hr class="divider">
+  
+      <!-- LEGS -->
+      <h3 class="section-title">Legs — Wednesday</h3>
+      <p><strong>Pull-ups:</strong> 1 warm-up set (TF)</p>
+  
+      <p><strong>Romanian Deadlift (RDL)</strong></p>
+      <ul>
+        <li>60&nbsp;kg warm-up</li>
+        <li>100&nbsp;kg warm-up</li>
+        <li>160&nbsp;kg — 3–5 reps</li>
+        <li>130&nbsp;kg — 4–8 reps</li>
+        <li>60&nbsp;kg — 12 reps</li>
+      </ul>
+  
+      <p><strong>Leg Press</strong> (each side)</p>
+      <ul>
+        <li>2 plates — 5 reps</li>
+        <li>4 plates — 5 reps</li>
+        <li>6 plates — 5–8 reps</li>
+        <li>4 plates — TF</li>
+      </ul>
+  
+      <p><strong>Quad Extensions:</strong> Working towards 80&nbsp;kg × 3 sets (TF)</p>
+      <p><strong>Hamstring Curl Machine:</strong> 3 lightweight sets (TF)</p>
+      <p><strong>Cable Ab Crunches:</strong> 3 sets (TF)</p>
+      <p><strong>Oblique Raises (Dip/Pull-up Station):</strong> 3 sets (TF)</p>
+      <p><strong>Push-ups</strong> (TF)</p>
+  
+      <hr class="divider">
+  
+      <!-- ARMS -->
+      <h3 class="section-title">Arms & Shoulders — Friday</h3>
+      <p><strong>Dumbbell Shoulder Press (each side)</strong></p>
+      <ul>
+        <li>18Kgs — 5 reps (warm-up)</li>
+        <li>24Kgs — 5 reps</li>
+        <li>32Kgs — 3 reps</li>
+        <li>28Kgs — 6 reps</li>
+        <li>22Kgs — 12 reps</li>
+      </ul>
+  
+      <p><strong>Seated Dumbbell Flys</strong> (Superset)</p>
+      <ul>
+        <li>12s — (TF)</li>
+        <li>8s — (TF)</li>
+        <li>4s — (TF)</li>
+      </ul>
+  
+      <p><strong>Cable Pushdowns</strong></p>
+      <p><strong>Overhead Tricep Extensions</strong></p>
+      <p><strong>Dumbbell Curls:</strong> 24s → 22s → 18s</p>
+      <p><strong>Cable Spider Curls:</strong> 14&nbsp;kg</p>
+      <p><strong>Forearm Machine Curls</strong></p>
+      <p><strong>Push-ups</strong>(TF)</p>
+  
     </div>
   </div>
+
 
   <!-- popup for handheld game collection -->
   <div id="handheldWindow" class="popup popup-offset-left" style="display:none;">
-    <div class="popup-bar">
-      <span>Handheld Collection</span>
-      <button class="popup-close" data-close="handheldWindow">✕</button>
-    </div>
-    <div class="popup-body popup-scroll">
-      <p>Lorem Ipsum text...</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PO7o1UUCDENz8wjDYg0vTdWnezH_AO49k7SLzFRLnDRYYPLR"
-        alt="gym"
-        class="popup-img">
-      <p>Lorem Ipsum text...</p>
-      <p>Lorem Ipsum text...</p>
-    </div>
+  <div class="popup-bar">
+    <span>Handheld Collection</span>
+    <button class="popup-close" data-close="handheldWindow">✕</button>
   </div>
 
+  <div class="popup-body popup-scroll">
+    <h2>My Handhelds/Game Snapshots</h2>
+    <p>Some of the devices/games I'm always rotating between.</p>
+
+    <hr class="divider">
+
+    <h2>Gallery</h2>
+
+    <div class="popup-gallery">
+    
+      <figure>
+        <img src="Gallery/Handhelds/Ayn Thor.jpg" alt="Ayn Thor Atomic Purple">
+        <figcaption>My Atomic Purple Ayn Thor (hasn't shipped yet)</figcaption>
+      </figure>
+
+
+      <figure>
+        <img src="Gallery/Handhelds/3DS.jpeg" alt="White 3DS XL">
+        <figcaption>Rythm thief and SPR machine.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Gallery/Handhelds/RG35xx+.jpeg" alt="RG35xx+">
+        <figcaption>BatoceraOS is peak.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Gallery/Handhelds/rog cat.jpg" alt="Kitten with ROG Ally">
+        <figcaption>He's going pro.</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="Gallery/Handhelds/rog cat 2.jpg" alt="Kitten with ROG Ally">
+        <figcaption>His brother's not going pro (he's confused).</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Gallery/Handhelds/Rog on the go.jpeg" alt="ROG Ally on the coach">
+        <figcaption>KH1 Final Mix while motion sick.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Gallery/Handhelds/Vita DSLR.jpeg" alt="PS Vita filming">
+        <figcaption>Peak filmmaking.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Gallery/Handhelds/Vita Slim.jpeg" alt="PS Vita homebrew">
+        <figcaption>On my 3rd Vita</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</div>
 </body>
 </html>
